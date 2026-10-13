@@ -611,7 +611,7 @@ function tick() {
     const btn = $('openGiftBtn');
     btn.classList.remove('invisible');
     btn.classList.add('fade-in');
-    $('cd-footer').textContent = "Saatnya telah tiba… ✨";
+    $('cd-footer').textContent = "C'est l'heure!✨";
     return;
   }
   const s = Math.floor(diff / 1000);
@@ -624,7 +624,7 @@ function startCountdown() {
   clearInterval(cdTimer);
   $('openGiftBtn').classList.add('invisible');
   $('openGiftBtn').classList.remove('fade-in');
-  $('cd-footer').textContent = "Beberapa detik lagi… Tunggu sampai waktunya";
+  $('cd-footer').textContent = "Encore un peu de patience...Le moment approche";
   tick();
   cdTimer = setInterval(tick, 1000);
 }
